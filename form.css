@@ -1,1 +1,73 @@
-css to be added here
+* {
+    font-family: sans-serif;
+    font-size: small;
+    
+    
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 540px;
+    height: 580px;
+    margin-left: 30%;
+}
+.child {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+.verticle {
+    border-left: 2px solid rgb(87, 85, 85);
+    height: 42px;
+    margin-right: 5px;
+    margin-left: 2px;
+}
+input {
+    height: 40px;
+    width: 350px;
+    background-color: rgb(235, 229, 229);
+    border: none;
+    
+    
+}
+label {
+    padding-top: 10px;
+}
+.cont-1 {
+    margin-right: -50px;
+}
+.cont-2 {
+    margin-right: -59px;
+}
+.cont-3 {
+    margin-right: -92px;
+}
+.btn-1 {
+    width: 150px;
+    background-color: rgb(10, 120, 163);
+    margin-left: 10px;
+    border: none;
+    border-radius: 1px;
+    height: 35px;
+}
+.btn-2 {
+    width: 300px;
+    background-color: rgb(10, 120, 163);
+    margin-left: 10px;
+    border: none;
+    border-radius: 1px;
+    height: 35px;
+}
+.formerror {
+    color: red;
+}
+p {
+    margin-left: -15px;
+}
+h3{
+    padding-left: 150px;
+}
