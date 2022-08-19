@@ -1,21 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form validation</title>
+    <link rel="stylesheet" href="form.css" />
 </head>
+
 <body>
-    <div>
-        <form>
-            <input type="text" placeholder="Name"/>
-            <input type="text" placeholder="Name"/>
-            <input type="text" placeholder="Name"/>
-            <input type="text" placeholder="Name"/>
-            <input type="text" placeholder="Name"/>
-            <input type="text" placeholder="Name"/>
-        </form>
-    </div>
+
+    <form action="/myaction.php" name="myForm" onsubmit="return validation()" method="post">
+
+        <div class="main">
+
+
+
+            <div class="child">
+                <p>Select your source:</p>
+                <div class="verticle"></div>
+                <h3>Google Cloud Storage</h3>
+            </div>
+            <div class="child" id="name">
+                <label>Provide a name for pipeline:</label>
+                <div class="verticle"></div>
+                <input type="text" name="fname" placeholder="e.g cust_shop_energy_gkateway001" required />
+                <span class="formerror"></span>
+
+            </div>
+
+            <div class="child cont-1" id="project">
+                <label>GCS project name:</label>
+                <div class="verticle"></div>
+                <input type="text" name="pname" placeholder="project-id" required />
+                <span class="formerror"></span>
+            </div>
+            <div class="child cont-1" id="bucket">
+                <label>GCS bucket name:</label>
+                <div class="verticle"></div>
+                <input type="text" name="bname" placeholder="gs://your-bucket" required />
+                <span class="formerror"></span>
+            </div>
+            <div class="child" id="storage">
+                <label>Input Cloud Storage File(s):</label>
+                <div class="verticle"></div>
+                <input type="text" name="fstorage" placeholder="GCS location of your files" required />
+                <span class="formerror"></span>
+            </div>
+            <div class="child cont-2" id="cred">
+                <label>GCS credentials:</label>
+                <div class="verticle"></div>
+                <input type="text" name="fcred" style="background-color: rgba(121, 121, 121, 0.5);" required />
+                <span class="formerror"></span>
+            </div>
+            <div class="child cont-3" id="number">
+                <label>Run Every:</label>
+                <div class="verticle"></div>
+                <input type="number" name="ftime" placeholder="(in minutes)" required />
+                <span class="formerror"></span>
+            </div>
+            <div class="child">
+                <input type="submit" class="btn-1" value="Create" />
+                <button class="btn-2">Cancel</button>
+            </div>
+
+        </div>
+    </form>
+
+    <script src="from.js"></script>
 </body>
+
+
 </html>
